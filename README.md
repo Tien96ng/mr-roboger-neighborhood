@@ -20,7 +20,9 @@ _{Full Description Placeholder}_
 _If neither option is appeal, please view the live project [here](https://tien96ng.github.io/mr-roboger-neighborhood/)!_
 
 ## Test Specs
-* _{Test Specs Placeholder}_
+**Describe: beepBoop()**
+Test: Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+Expect(beepBoop(3).toEqual([0, 1, 2, "Won't you be my neighbor?"]);
 
 ## Known Bugs
 * _{Known Bugs Placeholder}_

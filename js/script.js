@@ -9,7 +9,10 @@ $(document).ready(function() {
   $("#form").submit(event => {
     event.preventDefault();
     let numInput = parseInt($("#input").val());
-    alert(typeof numInput);
+    
+    const beepBoop = () => {
+      
+    }
 
   });
 
