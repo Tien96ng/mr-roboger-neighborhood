@@ -21,7 +21,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     $("#reverse-btn").show();
-    $("#submit-btn").attr("class", "btn btn-success")
+    $("#submit-btn").attr("class", "btn btn-success");
 
     numInput = parseInt($("#input").val());
     name  = $("#name").val().slice(0, 1).toUpperCase() + $("#name").val().slice(1).toLowerCase();
@@ -42,7 +42,7 @@ $(document).ready(function() {
         } else if(i.toString().includes("1")) {
           output.push(replyArr[0]);
         } else {
-          output.push(i)
+          output.push(i);
         }
       }
       return output;
