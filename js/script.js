@@ -12,8 +12,9 @@ $(document).ready(function() {
     
     const beepBoop = (range) => {
       let output = [];
+
       for(let i = 0; i <= range; i++) {
-        if(i === 3) {
+        if(i.toString().includes("3")) {
           output.push(replyArr[1])
         } else {
           output.push(i)
@@ -25,5 +26,4 @@ $(document).ready(function() {
     console.log(beepBoop(numInput));
 
   });
-
 });
