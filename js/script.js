@@ -10,9 +10,19 @@ $(document).ready(function() {
     event.preventDefault();
     let numInput = parseInt($("#input").val());
     
-    const beepBoop = () => {
-      
-    }
+    const beepBoop = (range) => {
+      let output = [];
+      for(let i = 0; i <= range; i++) {
+        if(i === 3) {
+          output.push(replyArr[1])
+        } else {
+          output.push(i)
+        }
+      }
+      return output;
+    };
+
+    console.log(beepBoop(numInput));
 
   });
 
