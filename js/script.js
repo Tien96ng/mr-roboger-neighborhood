@@ -15,7 +15,11 @@ $(document).ready(function() {
 
       for(let i = 0; i <= range; i++) {
         if(i.toString().includes("3")) {
+          output.push(replyArr[2])
+        } else if(i.toString().includes("2")) {
           output.push(replyArr[1])
+        } else if(i.toString().includes("1")) {
+          output.push(replyArr[0])
         } else {
           output.push(i)
         }
