@@ -25,10 +25,14 @@ Test: Numbers that contain a 3: all digits are replaced (all digits) with "Won't
 Expect(beepBoop(3).toEqual([0, 1, 2, "Won't you be my neighbor?"]);
 
 Test: Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
-Expect(beepBoop(3).toEqual([0, 1, "Boop!", "Won't you be my neighbor?"]);
+Expect(beepBoop(2).toEqual([0, 1, "Boop!", "Won't you be my neighbor?"]);
 
 Test: Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
-Expect(beepBoop(3).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]);
+Expect(beepBoop(1).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]);
+
+Test: User enters the number 13."
+Expect(beepBoop(13).toEqual(
+  [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]);
 
 ## Known Bugs
 * _{Known Bugs Placeholder}_
