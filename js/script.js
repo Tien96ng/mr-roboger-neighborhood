@@ -2,7 +2,7 @@ let replyArr = [`"Beep!"`, `"Boop!"`, `"Won't you be my`];
 const tryAgainPrompt = "Enter in another number to get a new result!";
 const hover = "Hover over your result to zoom in!";
 const neighbor = ` neighbor?"`;
-const reverseBtn = `<button type="click" id="reverse-btn">Reverse</button>`;
+const reverseBtn = `<button type="click" id="reverse-btn" class="btn btn-danger btn-lg">Reverse</button>`;
 
 
 $(document).ready(function() {
@@ -11,14 +11,15 @@ $(document).ready(function() {
   
   $("#form").submit(event => {
     event.preventDefault();
-
+    $("#reverse-btn").remove();
+    $("#form").append(reverseBtn);
 
     numInput = parseInt($("#input").val());
     name  = $("#name").val().slice(0, 1).toUpperCase() + $("#name").val().slice(1).toLowerCase();
-    name = ` neighbor, ${name}?"`;
-
-    if(name === `, ?"`) {
+    if(name === "") {
       name = neighbor;
+    } else {
+      name = ` neighbor, ${name}?"`;
     }
     
     const beepBoop = (range, name) => {
@@ -50,11 +51,11 @@ $(document).ready(function() {
 
     $("#form")[0].reset();
     name = "";
-    
+
   });
 
   $("#reverse-btn").click(() => {
-    
+    alert("Clicked!");
   });
 
 });
