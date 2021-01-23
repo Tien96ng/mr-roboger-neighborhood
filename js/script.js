@@ -2,17 +2,26 @@ let replyArr = [`"Beep!"`, `"Boop!"`, `"Won't you be my`];
 const tryAgainPrompt = "Enter in another number to get a new result!";
 const hover = "Hover over your result to zoom in!";
 const neighbor = ` neighbor?"`;
-const reverseBtn = `<button type="click" id="reverse-btn" class="btn btn-danger btn-lg">Reverse</button>`;
+const reverseBtn = ``;
 
 
 $(document).ready(function() {
   let numInput = "";
   let name = "";
+
+  const reverseInput = (input) => {
+    $("button#reverse-btn").click(() => {
+      $("#output-reverse").show();
+      let reverse = input.split(",").reverse().join(", ");
+      $(".reverse").text(reverse);
+    });
+  }
   
   $("#form").submit(event => {
     event.preventDefault();
-    $("#reverse-btn").remove();
-    $("#form").append(reverseBtn);
+
+    $("#reverse-btn").show();
+    $("#submit-btn").attr("class", "btn btn-success")
 
     numInput = parseInt($("#input").val());
     name  = $("#name").val().slice(0, 1).toUpperCase() + $("#name").val().slice(1).toLowerCase();
@@ -42,20 +51,29 @@ $(document).ready(function() {
     $("#try-again").text(tryAgainPrompt);
     $("#hover").text(hover);
 
-    let reverseAnswer = beepBoop(numInput, name).reverse().join(", ");
     let answer = beepBoop(numInput, name).join(", ");
 
     $("#output-container").show();
     $(".ans").text(answer)
-    $(".reverse").text(reverseAnswer);
+
+    reverseInput(answer);
+    
 
     $("#form")[0].reset();
     name = "";
 
   });
 
-  $("#reverse-btn").click(() => {
-    alert("Clicked!");
+  $("#reverse-btn").mouseover(() => {
+    $("#reverse-btn").text("Esrever");
+    $("#reverse-btn").attr("class", "btn btn-light");
   });
+
+  $("#reverse-btn").mouseout(() => {
+    $("#reverse-btn").text("Reverse");
+    $("#reverse-btn").attr("class", "btn btn-dark");
+  });
+
+
 
 });
