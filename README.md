@@ -27,6 +27,9 @@ Expect(beepBoop(3).toEqual([0, 1, 2, "Won't you be my neighbor?"]);
 Test: Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
 Expect(beepBoop(3).toEqual([0, 1, "Boop!", "Won't you be my neighbor?"]);
 
+Test: Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+Expect(beepBoop(3).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]);
+
 ## Known Bugs
 * _{Known Bugs Placeholder}_
 
