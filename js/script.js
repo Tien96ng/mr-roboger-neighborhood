@@ -4,7 +4,6 @@ const hover = "Hover over your result to zoom in!";
 const neighbor = ` neighbor?"`;
 const reverseBtn = ``;
 
-
 $(document).ready(function() {
   let numInput = "";
   let name = "";
@@ -58,7 +57,6 @@ $(document).ready(function() {
 
     reverseInput(answer);
     
-
     $("#form")[0].reset();
     name = "";
     $("#output-reverse").hide();
@@ -74,7 +72,4 @@ $(document).ready(function() {
     $("#reverse-btn").text("Reverse");
     $("#reverse-btn").attr("class", "btn btn-dark");
   });
-
-
-
 });
