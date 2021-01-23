@@ -12,6 +12,7 @@ $(document).ready(function() {
   const reverseInput = (input) => {
     $("button#reverse-btn").click(() => {
       $("#output-reverse").show();
+      $("#output-reverse").prepend("<hr>");
       let reverse = input.split(",").reverse().join(", ");
       $(".reverse").text(reverse);
     });
@@ -61,6 +62,7 @@ $(document).ready(function() {
 
     $("#form")[0].reset();
     name = "";
+    $("#output-reverse").hide();
 
   });
 
