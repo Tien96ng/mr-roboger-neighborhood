@@ -19,7 +19,10 @@ $(document).ready(function() {
   $("#form").submit(event => {
     event.preventDefault();
 
-    $("#reverse-btn").show();
+    $("#reverse-btn").animate({
+      left: "+=50",
+      height: "toggle"
+    }, 1000,);
     $("#submit-btn").attr("class", "btn btn-success");
 
     numInput = parseInt($("#input").val());
