@@ -22,6 +22,7 @@ body {
 
 #output-reverse {
   display: none;
+  border-top: dashed 1px black;
 }
 
 .ans, .reverse { 
