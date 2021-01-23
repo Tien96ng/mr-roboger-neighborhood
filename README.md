@@ -21,13 +21,13 @@ _If neither option is appeal, please view the live project [here](https://tien96
 
 ## Test Specs
 **Describe: beepBoop()**
-Test: Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+Test: Numbers containing 3: all digits replaced by "Won't you be my neighbor?"
 Expect(beepBoop(3).toEqual([0, 1, 2, "Won't you be my neighbor?"]);
 
-Test: Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+Test: Numbers containing 2: all digits replaced by (all digits) with "Boop!"
 Expect(beepBoop(2).toEqual([0, 1, "Boop!", "Won't you be my neighbor?"]);
 
-Test: Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+Test: Numbers containing 1: all digits replaced by (all digits) with "Beep!"
 Expect(beepBoop(1).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]);
 
 Test: User enters the number 13.
