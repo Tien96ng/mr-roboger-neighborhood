@@ -10,13 +10,20 @@ body {
   margin: 20px;
 }
 
-#output {
+#output, #output-reverse {
   padding: 5px;
 }
 
-#arr { 
-  color:  red;
+#arr, #arr-reverse { 
   padding-left: 15px;;
+}
+
+#arr {
+  color:red;
+}
+
+#arr-reverse {
+  color: blue;
 }
 
 #try-again {

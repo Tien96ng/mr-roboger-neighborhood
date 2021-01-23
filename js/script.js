@@ -27,9 +27,12 @@ $(document).ready(function() {
 
     $("#try-again").text(tryAgainPrompt);
 
+    let reverseAnswer = beepBoop(numInput).reverse().join(", ");
     let answer = beepBoop(numInput).join(", ");
+
     $("#output-container").show();
     $("#output").append(`<span id='arr'>${answer}</span>`)
+    $("#output-reverse").append(`<span id='arr-reverse'>${reverseAnswer}</span>`)
 
     $("#form")[0].reset();
   });
