@@ -1,6 +1,6 @@
 # _Welcome to Mr. Roboger's Neighborhood_
 
-#### _{Short Description Placeholder}_
+#### _Takes user's input and displays the range of the number starting from 0 to the input with numbers containing 1, 2, and 3 altered._
 
 #### By _**Tien Nguyen**_
 
@@ -11,7 +11,7 @@
 * _jQuery 3.1_
 
 ## Description
-_{Full Description Placeholder}_
+_This apps takes in a user's input. The inpus is then displayed to the user on the HTML page starting from the 0, ranging to the input as the max number. For example, input is 5, so it'll display 0 - 5. But it also alters the range by changing every inclusion of "3" to "Won't you be my {placeholder}?". The placeholder is the user's name that is optional as a second input. If they don't enter their name, then the placeholder will be "neighbor". Then every inclusion of the number of 2 replaces the number with "Boop!" but that doesn't supersede the rule of 3. For example, if the number is "32", it'll replace the number with "Won't you be my {placeholder}?" instead of "Boop!". Finally, the last inclusion rule is for the number 1, that replaces the number with "Beep!", while following the rule to not supersede 2 and 3._
 
 ## Setup/Installation Requirements
 * _(No installations required.)_
@@ -36,8 +36,6 @@ Expect(beepBoop(13).toEqual(
 
 ## Known Bugs
 * _{Known Bugs Placeholder}_
-
-
 
 ## License
 _This software is licensed under the MIT license_
