@@ -14,22 +14,28 @@ body {
   padding: 5px;
 }
 
-#arr, #arr-reverse { 
+.ans, .reverse { 
   padding-left: 15px;;
 }
 
-#arr {
+.ans {
   color:red;
 }
 
-#arr-reverse {
+.reverse {
   color: blue;
 }
 
-#try-again {
+#try-again, #hover {
   color: green;
   font-style: italic;
   font-size: small;
+}
+
+#hover {
+  margin-top: -15px;
+  color: black;
+  font-size: 10px;
 }
 
 button:hover {
@@ -50,4 +56,13 @@ input {
 
 button {
   margin: 15px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.ans:hover, .reverse:hover {
+  font-size: 40px;
+  cursor: zoom-in;
 }

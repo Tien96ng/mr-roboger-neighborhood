@@ -1,6 +1,6 @@
 let replyArr = [`"Beep!"`, `"Boop!"`, `"Won't you be my`];
 const tryAgainPrompt = "Enter in another number to get a new result!";
-let pTagStr = "<p>Here is your result: <p>";
+const hover = "Hover over your result to zoom in!";
 const neighbor = ` neighbor?"`;
 
 
@@ -11,11 +11,10 @@ $(document).ready(function() {
   $("#form").submit(event => {
     event.preventDefault();
 
-    $("#arr").empty();
-    $("#arr-reverse").empty();
 
     numInput = parseInt($("#input").val());
-    name = `, ${$("#name").val()}?"`;
+    name  = $("#name").val().slice(0, 1).toUpperCase() + $("#name").val().slice(1).toLowerCase();
+    name = `, ${name}?"`;
 
     if(name === `, ?"`) {
       name = neighbor;
@@ -39,13 +38,14 @@ $(document).ready(function() {
     };
 
     $("#try-again").text(tryAgainPrompt);
+    $("#hover").text(hover);
 
     let reverseAnswer = beepBoop(numInput, name).reverse().join(", ");
     let answer = beepBoop(numInput, name).join(", ");
 
     $("#output-container").show();
-    $("#output").append(`<span id='arr'>${answer}</span>`);
-    $("#output-reverse").append(`<span id='arr-reverse'>${reverseAnswer}</span>`);
+    $(".ans").text(answer)
+    $(".reverse").text(reverseAnswer);
 
     $("#form")[0].reset();
     name = "";
