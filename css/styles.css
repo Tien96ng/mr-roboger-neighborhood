@@ -7,3 +7,8 @@ body {
   display: none;
   padding-top: 20px;
 }
+
+#arr { 
+  color:  red;
+  padding-left: 15px;;
+}

@@ -28,5 +28,7 @@ $(document).ready(function() {
     let answer = beepBoop(numInput).join(", ");
     $("#output-container").show();
     $("#output").append(`<span id='arr'>${answer}</span>`)
+
+    $("#form")[0].reset();
   });
 });
