@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     numInput = parseInt($("#input").val());
     name  = $("#name").val().slice(0, 1).toUpperCase() + $("#name").val().slice(1).toLowerCase();
-    name = `, ${name}?"`;
+    name = ` neighbor, ${name}?"`;
 
     if(name === `, ?"`) {
       name = neighbor;
