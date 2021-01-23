@@ -80,3 +80,8 @@ p {
   font-size: 40px;
   cursor: zoom-in;
 }
+
+ button:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out 0s;
+ }
