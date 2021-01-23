@@ -20,7 +20,7 @@ _This apps takes in a user's input. The input is then displayed to the user on t
 _If neither option is appeal, please view the live project [here](https://tien96ng.github.io/mr-roboger-neighborhood/)!_
 
 ## Test Specs
-**Describe: beepBoop()**
+**Describe: beepBoop()**\
 Test: Numbers containing 3: all digits replaced by "Won't you be my neighbor?"\
 Expect(beepBoop(3).toEqual([0, 1, 2, "Won't you be my neighbor?"]);
 
