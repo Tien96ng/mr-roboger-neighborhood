@@ -1,6 +1,6 @@
 const replyArr = [`"Beep!"`, `"Boop!"`, `"Won't you be my neighbor?"`];
 const tryAgainPrompt = "Enter in another number to get a new result!";
-let pTagStr = "<p>Here is your result: <p>"
+let pTagStr = "<p>Here is your result: <p>";
 
 $(document).ready(function() {
   
@@ -24,6 +24,8 @@ $(document).ready(function() {
       }
       return output;
     };
+
+    $("#try-again").text(tryAgainPrompt);
 
     let answer = beepBoop(numInput).join(", ");
     $("#output-container").show();

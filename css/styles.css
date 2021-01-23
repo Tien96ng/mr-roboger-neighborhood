@@ -6,9 +6,25 @@ body {
 #output-container {
   display: none;
   padding-top: 20px;
+  border: solid 1px black;
+  margin: 20px;
+}
+
+#output {
+  padding: 5px;
 }
 
 #arr { 
   color:  red;
   padding-left: 15px;;
+}
+
+#try-again {
+  color: green;
+  font-style: italic;
+  font-size: small;
+}
+
+button:hover {
+  cursor: pointer;
 }
