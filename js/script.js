@@ -1,8 +1,6 @@
-const replyArr = ["Beep!", "Boop!", "Won't you be my neighbor?"];
+const replyArr = [`"Beep!"`, `"Boop!"`, `"Won't you be my neighbor?"`];
 const tryAgainPrompt = "Enter in another number to get a new result!";
-
-// A user should be able to enter a new number and see new results over and over again.
-
+let pTagStr = "<p>Here is your result: <p>"
 
 $(document).ready(function() {
   
@@ -27,7 +25,8 @@ $(document).ready(function() {
       return output;
     };
 
-    console.log(beepBoop(numInput));
-
+    let answer = beepBoop(numInput).join(", ");
+    $("#output-container").show();
+    $("#output").append(`<span id='arr'>${answer}</span>`)
   });
 });

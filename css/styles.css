@@ -2,3 +2,8 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+
+#output-container {
+  display: none;
+  padding-top: 20px;
+}
