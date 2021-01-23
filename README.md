@@ -34,6 +34,10 @@ Test: User enters the number 13.\
 Expect(beepBoop(13).toEqual(
   [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]);
 
+**Describe: reverseInput()**\
+Test: Takes the user's input and reverse the output."\
+Expect(beepBoop(5).toEqual([5, 4, "Won't you be my neighbor?", "Boop!", "Beep!", 0]);
+
 ## Known Bugs
 * _None_
 

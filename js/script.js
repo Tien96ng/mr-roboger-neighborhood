@@ -2,6 +2,7 @@ let replyArr = [`"Beep!"`, `"Boop!"`, `"Won't you be my`];
 const tryAgainPrompt = "Enter in another number to get a new result!";
 const hover = "Hover over your result to zoom in!";
 const neighbor = ` neighbor?"`;
+const reverseBtn = `<button type="click" id="reverse-btn">Reverse</button>`;
 
 
 $(document).ready(function() {
@@ -51,4 +52,9 @@ $(document).ready(function() {
     name = "";
     
   });
+
+  $("#reverse-btn").click(() => {
+    
+  });
+
 });
