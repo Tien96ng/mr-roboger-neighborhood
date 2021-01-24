@@ -39,7 +39,8 @@ Test: Takes the user's input and reverse the output."\
 Expect(beepBoop(5).toEqual([5, 4, "Won't you be my neighbor?", "Boop!", "Beep!", 0]);
 
 ## Known Bugs
-* _None_
+* _Reverse with a name will put it at the beginning of the 3 digit replacement._
+* _For Example: Input 3 with a name will reverse to === [Tien?", "Won't you be my neighbor, "Boop!", "Beep!", 0]_
 
 ## License
 _This software is licensed under the MIT license_
