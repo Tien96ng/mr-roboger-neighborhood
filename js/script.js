@@ -1,3 +1,20 @@
+const beepBoop = (range, name) => {
+  let output = [];
+
+  for(let i = 0; i <= range; i++) {
+    if(i.toString().includes("3")) {
+      output.push(`"Won't you be my` + name);
+    } else if(i.toString().includes("2")) {
+      output.push(`"Boop!"`);
+    } else if(i.toString().includes("1")) {
+      output.push(`"Beep!"`);
+    } else {
+      output.push(i);
+    }
+  }
+  return output;
+};
+
 $(document).ready(function() {
   let numInput = "";
   let name = "";
@@ -18,28 +35,12 @@ $(document).ready(function() {
 
     numInput = parseInt($("#input").val());
     name  = $("#name").val().slice(0, 1).toUpperCase() + $("#name").val().slice(1).toLowerCase();
+
     if(name === "") {
       name = ` neighbor?"`;
     } else {
       name = ` neighbor, ${name}?"`;
     }
-    
-    const beepBoop = (range, name) => {
-      let output = [];
-
-      for(let i = 0; i <= range; i++) {
-        if(i.toString().includes("3")) {
-          output.push(`"Won't you be my` + name);
-        } else if(i.toString().includes("2")) {
-          output.push(`"Boop!"`);
-        } else if(i.toString().includes("1")) {
-          output.push(`"Beep!"`);
-        } else {
-          output.push(i);
-        }
-      }
-      return output;
-    };
 
     $("#try-again").text("Enter in another number to get a new result!");
     $("#hover").text("Hover over your result to zoom in!");
