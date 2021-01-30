@@ -1,8 +1,3 @@
-let replyArr = [`"Beep!"`, `"Boop!"`, `"Won't you be my`];
-const tryAgainPrompt = "Enter in another number to get a new result!";
-const hover = "Hover over your result to zoom in!";
-const neighbor = ` neighbor?"`;
-
 $(document).ready(function() {
   let numInput = "";
   let name = "";
@@ -24,7 +19,7 @@ $(document).ready(function() {
     numInput = parseInt($("#input").val());
     name  = $("#name").val().slice(0, 1).toUpperCase() + $("#name").val().slice(1).toLowerCase();
     if(name === "") {
-      name = neighbor;
+      name = ` neighbor?"`;
     } else {
       name = ` neighbor, ${name}?"`;
     }
@@ -34,11 +29,11 @@ $(document).ready(function() {
 
       for(let i = 0; i <= range; i++) {
         if(i.toString().includes("3")) {
-          output.push(replyArr[2] + name);
+          output.push(`"Won't you be my` + name);
         } else if(i.toString().includes("2")) {
-          output.push(replyArr[1]);
+          output.push(`"Boop!"`);
         } else if(i.toString().includes("1")) {
-          output.push(replyArr[0]);
+          output.push(`"Beep!"`);
         } else {
           output.push(i);
         }
@@ -46,8 +41,8 @@ $(document).ready(function() {
       return output;
     };
 
-    $("#try-again").text(tryAgainPrompt);
-    $("#hover").text(hover);
+    $("#try-again").text("Enter in another number to get a new result!");
+    $("#hover").text("Hover over your result to zoom in!");
 
     let answer = beepBoop(numInput, name).join(", ");
 
